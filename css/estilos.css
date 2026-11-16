@@ -695,7 +695,7 @@ legend {
     scroll-margin-top: 25px;
 }
 
-/* 4. Adaptación a pantallas pequeñas */
+/* 4. Adaptación a las pantallas pequeñas */
 @media (max-width: 900px) {
     .contenido-portada {
         gap: 35px;
