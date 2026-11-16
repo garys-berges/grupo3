@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es-DO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de solicitud de cita médica de MediCitas.">
+    <title>Solicitar cita | MediCitas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="encabezado-sitio">
+        <div class="contenedor contenido-encabezado">
+            <a class="marca" href="index.html" aria-label="MediCitas, página de inicio">
+                <span class="marca-icono">+</span>
+                <span>Medi<span class="marca-acento">Citas</span></span>
+            </a>
+
+            <nav class="menu-principal" aria-label="Navegación principal">
+                <ul>
+                    <li><a class="enlace-menu" href="index.html">Inicio</a></li>
+                    <li><a class="enlace-menu" href="index.html#especialidades">Especialidades</a></li>
+                    <li><a class="enlace-menu" href="index.html#nosotros">Nosotros</a></li>
+                </ul>
+            </nav>
+
+            <a class="boton boton-pequeno" href="solicitar-cita.html">Solicitar cita</a>
+        </div>
+    </header>
+
+    <main class="pagina-formulario">
+        <section class="intro-formulario">
+            <div class="contenedor">
+                <span class="antetitulo">Estamos para ayudarte</span>
+                <h1>Solicita tu cita médica</h1>
+                <p>Completa el siguiente formulario con tus datos y preferencias de atención.</p>
+                <a class="enlace-volver" href="index.html">← Volver al inicio</a>
+            </div>
+        </section>
+
+        <section class="contenedor seccion-formulario">
+            <div class="lateral-formulario">
+                <div class="icono-lateral">+</div>
+                <h2>Un paso más cerca de tu bienestar.</h2>
+                <p>Indícanos qué tipo de atención necesitas. Nuestro personal administrativo podrá revisar tu solicitud.</p>
+                <div class="recordatorio-lateral">
+                    <strong>Recuerda</strong>
+                    <p>La fecha y hora indicadas son preferencias. La cita estará sujeta a revisión y confirmación.</p>
+                </div>
+            </div>
+
+            <div class="tarjeta-formulario">
+                <div class="encabezado-tarjeta">
+                    <div>
+                        <span class="antetitulo">Formulario</span>
+                        <h2>Datos de la solicitud</h2>
+                    </div>
+                    <span class="nota-requeridos">* Campos requeridos</span>
+                </div>
+
+                <!-- Formulario maquetado para la primera fase; todavía no procesa información. -->
+                <form action="#" method="get">
+                    <fieldset>
+                        <legend>Información del paciente</legend>
+                        <div class="cuadricula-formulario">
+                            <div class="grupo-campo">
+                                <label for="nombre">Nombre *</label>
+                                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="grupo-campo">
+                                <label for="apellido">Apellido *</label>
+                                <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required>
+                            </div>
+                            <div class="grupo-campo">
+                                <label for="correo">Correo electrónico *</label>
+                                <input type="email" id="correo" name="correo" placeholder="nombre@correo.com" required>
+                            </div>
+                            <div class="grupo-campo">
+                                <label for="telefono">Teléfono *</label>
+                                <input type="tel" id="telefono" name="telefono" placeholder="(809) 000-0000" required>
+                            </div>
+                            <div class="grupo-campo">
+                                <label for="documento">Cédula | Pasaporte</label>
+                                <input type="text" id="documento" name="documento" placeholder="Número de identificación">
+                            </div>
+                            <div class="grupo-campo">
+                                <label for="nacimiento">Fecha de nacimiento</label>
+                                <input type="date" id="nacimiento" name="nacimiento">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Preferencias de la cita</legend>
+                        <div class="cuadricula-formulario">
+                            <div class="grupo-campo">
+                                <label for="especialidad">Especialidad *</label>
+                                <select id="especialidad" name="especialidad" required>
+                                    <option value="">Selecciona una especialidad</option>
+                                    <option>Cardiología</option>
+                                    <option>Pediatría</option>
+                                    <option>Dermatología</option>
+                                    <option>Ginecología</option>
+                                    <option>Medicina general</option>
+                                </select>
+                            </div>
+                            <div class="grupo-campo">
+                                <label for="especialista">Especialista</label>
+                                <select id="especialista" name="especialista">
+                                    <option value="">Selecciona un especialista</option>
+                                    <option>Dr. Carlos Méndez</option>
+                                    <option>Dra. Laura Rodríguez</option>
+                                    <option>Sin preferencia</option>
+                                </select>
+                            </div>
+                            <div class="grupo-campo">
+                                <label for="fecha">Fecha preferida *</label>
+                                <input type="date" id="fecha" name="fecha" required>
+                            </div>
+                            <div class="grupo-campo">
+                                <label for="hora">Horario preferido</label>
+                                <select id="hora" name="hora">
+                                    <option value="">Selecciona un horario</option>
+                                    <option>8:00 a. m. - 10:00 a. m.</option>
+                                    <option>10:00 a. m. - 12:00 p. m.</option>
+                                    <option>1:00 p. m. - 3:00 p. m.</option>
+                                    <option>3:00 p. m. - 5:00 p. m.</option>
+                                </select>
+                            </div>
+                            <div class="grupo-campo ancho-completo">
+                                <label for="motivo">¿Cuál es el motivo de su consulta?</label>
+                                <textarea id="motivo" name="motivo" rows="4" placeholder="Describe brevemente el motivo de tu solicitud..."></textarea>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="acciones-formulario">
+                        <p>Al continuar, tus datos quedarían sujetos a las políticas de privacidad de la clínica.</p>
+                        <button class="boton" type="button">Enviar solicitud <span aria-hidden="true">→</span></button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="contenedor contenido-pie">
+            <a class="marca marca-pie" href="index.html"><span class="marca-icono">+</span><span>Medi<span class="marca-acento">Citas</span></span></a>
+            <p>Tu salud merece una atención organizada.</p>
+            <small>© 2026 MediCitas. Proyecto DAW Grupo # 3 · UAPA</small>
+        </div>
+    </footer>
+</body>
+</html>

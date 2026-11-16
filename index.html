@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es-DO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MediCitas: encuentra especialistas y solicita tu próxima cita médica.">
+    <title>MediCitas | Atención médica a tu alcance</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="encabezado-sitio">
+        <div class="contenedor contenido-encabezado">
+            <a class="marca" href="index.html" aria-label="MediCitas, página de inicio">
+                <span class="marca-icono">+</span>
+                <span>Medi<span class="marca-acento">Citas</span></span>
+            </a>
+
+            <nav class="menu-principal" aria-label="Navegación principal">
+                <ul>
+                    <li><a class="enlace-menu activo" href="index.html">Inicio</a></li>
+                    <li><a class="enlace-menu" href="#especialidades">Especialidades</a></li>
+                    <li><a class="enlace-menu" href="#nosotros">Nosotros</a></li>
+                </ul>
+            </nav>
+
+            <a class="boton boton-pequeno" href="solicitar-cita.html">Solicitar cita</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="portada" id="inicio">
+            <div class="contenedor contenido-portada">
+                <div class="texto-portada">
+                    <span class="antetitulo">Tu salud, nuestra prioridad</span>
+                    <h1>Tu bienestar comienza con una <span class="texto-acento">cita.</span></h1>
+                    <p class="descripcion-portada">
+                        Encuentra el especialista que necesitas y solicita tu cita médica
+                        de una manera sencilla y organizada.
+                    </p>
+                    <div class="acciones-portada">
+                        <a class="boton" href="solicitar-cita.html">Solicitar una cita <span aria-hidden="true">→</span></a>
+                        <a class="enlace-texto" href="#especialidades">Conocer especialidades</a>
+                    </div>
+                    <div class="nota-portada">
+                        <span class="nota-marca">✓</span>
+                        Atención organizada y cercana para ti y tu familia.
+                    </div>
+                </div>
+
+                <div class="marco-imagen-portada">
+                    <img
+                        class="imagen-portada"
+                        src="imagenes/doctora.jpg"
+                        alt="Doctora con bata blanca en un consultorio médico">
+                    <div class="leyenda-imagen">
+                        <span class="icono-leyenda">+</span>
+                        <span><strong>Atención especializada</strong><small>Estamos para acompañarte</small></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion seccion-especialidades" id="especialidades">
+            <div class="contenedor">
+                <div class="encabezado-seccion">
+                    <div>
+                        <span class="antetitulo">Nuestros servicios</span>
+                        <h2>Especialidades médicas</h2>
+                    </div>
+                    <p>Conoce algunas de las áreas médicas disponibles para atender tus necesidades.</p>
+                </div>
+
+                <ul class="cuadricula-especialidades">
+                    <li class="tarjeta-especialidad">
+                        <span class="icono-especialidad">♡</span>
+                        <h3>Cardiología</h3>
+                        <p>Atención y cuidado de la salud del corazón.</p>
+                    </li>
+                    <li class="tarjeta-especialidad">
+                        <span class="icono-especialidad">✚</span>
+                        <h3>Pediatría</h3>
+                        <p>Cuidado médico para niños y adolescentes.</p>
+                    </li>
+                    <li class="tarjeta-especialidad">
+                        <span class="icono-especialidad">⌕</span>
+                        <h3>Dermatología</h3>
+                        <p>Evaluación y cuidado de la piel.</p>
+                    </li>
+                    <li class="tarjeta-especialidad">
+                        <span class="icono-especialidad">✿</span>
+                        <h3>Ginecología</h3>
+                        <p>Salud y bienestar integral de la mujer.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="seccion seccion-nosotros" id="nosotros">
+            <div class="contenedor contenido-nosotros">
+                <div class="simbolo-nosotros">+</div>
+                <div>
+                    <span class="antetitulo">Sobre MediCitas</span>
+                    <h2>Hacemos más fácil organizar tu atención médica.</h2>
+                    <p>
+                        MediCitas es una propuesta de plataforma para acercar a los pacientes
+                        a los profesionales de la salud. Nuestro objetivo es facilitar la
+                        solicitud y coordinación de citas médicas.
+                    </p>
+                </div>
+                <a class="boton boton-claro" href="solicitar-cita.html">Comenzar ahora <span aria-hidden="true">→</span></a>
+            </div>
+        </section>
+
+        <section class="seccion seccion-pasos">
+            <div class="contenedor contenido-pasos">
+                <div>
+                    <span class="antetitulo">Simple y práctico</span>
+                    <h2>Solicitar tu cita es muy sencillo</h2>
+                </div>
+                <ol class="lista-pasos">
+                    <li><span>01</span><div><strong>Elige una especialidad</strong><p>Identifica el área médica que necesitas.</p></div></li>
+                    <li><span>02</span><div><strong>Completa tus datos</strong><p>Indica tu información y fecha preferida.</p></div></li>
+                    <li><span>03</span><div><strong>Espera la confirmación</strong><p>El personal administrativo revisará tu solicitud.</p></div></li>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="contenedor contenido-pie">
+            <a class="marca marca-pie" href="index.html"><span class="marca-icono">+</span><span>Medi<span class="marca-acento">Citas</span></span></a>
+            <p>Tu salud merece una atención organizada.</p>
+            <small>© 2026 MediCitas. Proyecto DAW Grupo # 3 · UAPA</small>
+        </div>
+    </footer>
+</body>
+</html>
