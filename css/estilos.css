@@ -54,6 +54,12 @@ textarea {
     font: inherit;
 }
 
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--verde-azulado);
+    outline-offset: 3px;
+}
+
 h1,
 h2,
 h3,

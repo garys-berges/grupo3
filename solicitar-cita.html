@@ -11,7 +11,7 @@
     <header class="encabezado-sitio">
         <div class="contenedor contenido-encabezado">
             <a class="marca" href="index.html" aria-label="MediCitas, página de inicio">
-                <span class="marca-icono">+</span>
+                <span class="marca-icono" aria-hidden="true">+</span>
                 <span>Medi<span class="marca-acento">Citas</span></span>
             </a>
 
@@ -23,7 +23,7 @@
                 </ul>
             </nav>
 
-            <a class="boton boton-pequeno" href="solicitar-cita.html">Solicitar cita</a>
+            <a class="boton boton-pequeno" href="solicitar-cita.html" aria-current="page">Solicitar cita</a>
         </div>
     </header>
 
@@ -38,15 +38,15 @@
         </section>
 
         <section class="contenedor seccion-formulario">
-            <div class="lateral-formulario">
-                <div class="icono-lateral">+</div>
+            <aside class="lateral-formulario">
+                <div class="icono-lateral" aria-hidden="true">+</div>
                 <h2>Un paso más cerca de tu bienestar.</h2>
                 <p>Indícanos qué tipo de atención necesitas. Nuestro personal administrativo podrá revisar tu solicitud.</p>
                 <div class="recordatorio-lateral">
                     <strong>Recuerda</strong>
                     <p>La fecha y hora indicadas son preferencias. La cita estará sujeta a revisión y confirmación.</p>
                 </div>
-            </div>
+            </aside>
 
             <div class="tarjeta-formulario">
                 <div class="encabezado-tarjeta">
@@ -96,20 +96,20 @@
                                 <label for="especialidad">Especialidad *</label>
                                 <select id="especialidad" name="especialidad" required>
                                     <option value="">Selecciona una especialidad</option>
-                                    <option>Cardiología</option>
-                                    <option>Pediatría</option>
-                                    <option>Dermatología</option>
-                                    <option>Ginecología</option>
-                                    <option>Medicina general</option>
+                                    <option value="cardiologia">Cardiología</option>
+                                    <option value="pediatria">Pediatría</option>
+                                    <option value="dermatologia">Dermatología</option>
+                                    <option value="ginecologia">Ginecología</option>
+                                    <option value="medicina-general">Medicina general</option>
                                 </select>
                             </div>
                             <div class="grupo-campo">
                                 <label for="especialista">Especialista</label>
                                 <select id="especialista" name="especialista">
                                     <option value="">Selecciona un especialista</option>
-                                    <option>Dr. Carlos Méndez</option>
-                                    <option>Dra. Laura Rodríguez</option>
-                                    <option>Sin preferencia</option>
+                                    <option value="dr-carlos-mendez">Dr. Carlos Méndez</option>
+                                    <option value="dra-laura-rodriguez">Dra. Laura Rodríguez</option>
+                                    <option value="sin-preferencia">Sin preferencia</option>
                                 </select>
                             </div>
                             <div class="grupo-campo">
@@ -120,10 +120,10 @@
                                 <label for="hora">Horario preferido</label>
                                 <select id="hora" name="hora">
                                     <option value="">Selecciona un horario</option>
-                                    <option>8:00 a. m. - 10:00 a. m.</option>
-                                    <option>10:00 a. m. - 12:00 p. m.</option>
-                                    <option>1:00 p. m. - 3:00 p. m.</option>
-                                    <option>3:00 p. m. - 5:00 p. m.</option>
+                                    <option value="08:00-10:00">8:00 a. m. - 10:00 a. m.</option>
+                                    <option value="10:00-12:00">10:00 a. m. - 12:00 p. m.</option>
+                                    <option value="13:00-15:00">1:00 p. m. - 3:00 p. m.</option>
+                                    <option value="15:00-17:00">3:00 p. m. - 5:00 p. m.</option>
                                 </select>
                             </div>
                             <div class="grupo-campo ancho-completo">
@@ -144,7 +144,7 @@
 
     <footer class="pie-pagina">
         <div class="contenedor contenido-pie">
-            <a class="marca marca-pie" href="index.html"><span class="marca-icono">+</span><span>Medi<span class="marca-acento">Citas</span></span></a>
+            <a class="marca marca-pie" href="index.html"><span class="marca-icono" aria-hidden="true">+</span><span>Medi<span class="marca-acento">Citas</span></span></a>
             <p>Tu salud merece una atención organizada.</p>
             <small>© 2026 MediCitas. Proyecto DAW Grupo # 3 · UAPA</small>
         </div>
