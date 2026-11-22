@@ -1,244 +1,170 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="MediCitas facilita la búsqueda de especialidades médicas y la solicitud de citas.">
-    <title>MediCitas | Atención médica más sencilla</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <meta name="description" content="MediCitas facilita el acceso a servicios médicos y solicitudes de citas.">
+    <title>MediCitas | Inicio</title>
+
+    <link rel="stylesheet" href="css/2%20estilos.css">
 </head>
 <body>
 
-    <header class="encabezado-sitio">
-        <div class="contenedor contenido-encabezado">
+    <header class="encabezado">
+        <div class="contenedor navegacion">
+            <a href="2%20index.html" class="logo">MediCitas</a>
 
-            <a class="marca" href="index.html">
-                <span class="marca-icono">+</span>
-                <span>Medi<span class="marca-acento">Citas</span></span>
-            </a>
-
-            <nav class="menu-principal">
-                <ul>
-                    <li><a class="enlace-menu activo" href="#inicio">Inicio</a></li>
-                    <li><a class="enlace-menu" href="#especialidades">Especialidades</a></li>
-                    <li><a class="enlace-menu" href="#nosotros">Nosotros</a></li>
+            <nav aria-label="Menú principal">
+                <ul class="menu">
+                    <li><a href="2%20index.html">Inicio</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
                 </ul>
             </nav>
 
-            <a class="boton boton-pequeno" href="solicitar-cita.html">
+            <a href="2%20solicitar-cita.html" class="boton boton-principal">
                 Solicitar cita
             </a>
-
         </div>
     </header>
 
     <main>
 
-        <section class="portada" id="inicio">
-            <div class="contenedor contenido-portada">
+        <section class="hero">
+            <div class="contenedor hero-contenido">
 
-                <div class="texto-portada">
-                    <span class="antetitulo">Tu salud es lo primero</span>
+                <div class="hero-texto">
+                    <span class="etiqueta">Tu salud es nuestra prioridad</span>
 
-                    <h1>
-                        Encontrar atención médica ahora es
-                        <span class="texto-acento">más fácil.</span>
-                    </h1>
+                    <h1>Encontrar atención médica ahora es más fácil.</h1>
 
-                    <p class="descripcion-portada">
+                    <p>
                         En MediCitas puedes conocer diferentes especialidades
                         médicas y comenzar el proceso para solicitar una cita
                         de manera sencilla.
                     </p>
 
-                    <div class="acciones-portada">
-                        <a class="boton" href="solicitar-cita.html">
-                            Solicitar una cita →
-                        </a>
-
-                        <a class="enlace-texto" href="#especialidades">
-                            Ver especialidades
-                        </a>
-                    </div>
-
-                    <div class="nota-portada">
-                        <span class="nota-marca">✓</span>
-                        <span>
-                            Una forma más organizada de acercarte a los
-                            servicios de salud.
-                        </span>
-                    </div>
+                    <a href="2%20solicitar-cita.html" class="boton boton-principal">
+                        Solicitar una cita
+                    </a>
                 </div>
 
-                <div class="marco-imagen-portada">
-                    <img
-                        class="imagen-portada"
-                        src="imagenes/doctora.jpg"
-                        alt="Profesional de la salud atendiendo en una consulta médica"
-                    >
-
-                    <div class="leyenda-imagen">
-                        <span class="icono-leyenda">+</span>
-                        <div>
-                            <strong>Atención y orientación</strong>
-                            <small>Pensado para el bienestar del paciente</small>
-                        </div>
-                    </div>
+                <div class="hero-imagen">
+                    <img src="imagenes/doctora.jpg"
+                         alt="Profesional de la salud atendiendo a un paciente">
                 </div>
 
             </div>
         </section>
 
-        <section class="seccion" id="especialidades">
+        <section class="seccion especialidades" id="especialidades">
             <div class="contenedor">
 
-                <div class="encabezado-seccion">
-                    <div>
-                        <span class="antetitulo">Servicios médicos</span>
-                        <h2>Especialidades disponibles</h2>
-                    </div>
-
+                <div class="titulo-seccion">
+                    <h2>Especialidades médicas</h2>
                     <p>
-                        Conoce algunas de las áreas médicas que puedes consultar
-                        al momento de solicitar tu cita.
+                        Conoce algunas de las áreas de atención disponibles
+                        en nuestra plataforma.
                     </p>
                 </div>
 
-                <ul class="cuadricula-especialidades">
+                <div class="lista-especialidades">
 
-                    <li class="tarjeta-especialidad">
-                        <span class="icono-especialidad">♡</span>
+                    <article class="tarjeta-especialidad">
+                        <div class="icono-especialidad">♡</div>
                         <h3>Cardiología</h3>
-                        <p>
-                            Atención relacionada con el corazón y el sistema
-                            circulatorio.
-                        </p>
-                    </li>
+                        <p>Atención enfocada en el cuidado del corazón.</p>
+                    </article>
 
-                    <li class="tarjeta-especialidad">
-                        <span class="icono-especialidad">✚</span>
+                    <article class="tarjeta-especialidad">
+                        <div class="icono-especialidad">✚</div>
                         <h3>Medicina general</h3>
-                        <p>
-                            Evaluación inicial y orientación para el cuidado
-                            de la salud.
-                        </p>
-                    </li>
+                        <p>Consultas y evaluaciones generales de salud.</p>
+                    </article>
 
-                    <li class="tarjeta-especialidad">
-                        <span class="icono-especialidad">☼</span>
+                    <article class="tarjeta-especialidad">
+                        <div class="icono-especialidad">✿</div>
                         <h3>Pediatría</h3>
-                        <p>
-                            Atención médica dirigida a niños y adolescentes.
-                        </p>
-                    </li>
+                        <p>Atención médica para niños y adolescentes.</p>
+                    </article>
 
-                    <li class="tarjeta-especialidad">
-                        <span class="icono-especialidad">⚕</span>
+                    <article class="tarjeta-especialidad">
+                        <div class="icono-especialidad">✧</div>
                         <h3>Dermatología</h3>
-                        <p>
-                            Consulta para el cuidado de la piel, el cabello
-                            y las uñas.
-                        </p>
-                    </li>
+                        <p>Orientación para el cuidado de la piel.</p>
+                    </article>
 
-                </ul>
+                </div>
             </div>
         </section>
 
-        <section class="seccion-nosotros" id="nosotros">
-            <div class="contenedor contenido-nosotros">
+        <section class="seccion nosotros" id="nosotros">
+            <div class="contenedor nosotros-contenido">
 
-                <div class="simbolo-nosotros">+</div>
-
-                <div>
-                    <span class="antetitulo">Sobre MediCitas</span>
-
-                    <h2>
-                        Queremos hacer más sencillo el primer paso para
-                        recibir atención.
-                    </h2>
-
-                    <p>
-                        MediCitas es una propuesta de sitio web que organiza
-                        la información de los servicios médicos y presenta
-                        un formulario para solicitar citas.
-                    </p>
+                <div class="titulo-seccion">
+                    <h2>Conoce MediCitas</h2>
                 </div>
 
-                <a class="boton boton-claro" href="solicitar-cita.html">
-                    Conocer el formulario
-                </a>
+                <p>
+                    MediCitas es una propuesta de plataforma digital creada
+                    para facilitar la búsqueda de especialidades médicas y
+                    el proceso de solicitud de citas.
+                </p>
+
+                <p>
+                    Nuestro propósito es ofrecer una experiencia sencilla,
+                    organizada y fácil de utilizar para las personas que
+                    necesitan encontrar atención médica.
+                </p>
 
             </div>
         </section>
 
-        <section class="seccion">
-            <div class="contenedor contenido-pasos">
+        <section class="seccion pasos">
+            <div class="contenedor">
 
-                <div>
-                    <span class="antetitulo">Cómo comenzar</span>
-                    <h2>Solicitar una cita en pocos pasos</h2>
-                    <p>
-                        El proceso que se propone para el sitio es simple
-                        y fácil de seguir.
-                    </p>
+                <div class="titulo-seccion">
+                    <h2>¿Cómo solicitar una cita?</h2>
+                    <p>Realizar una solicitud es sencillo.</p>
                 </div>
 
-                <ol class="lista-pasos">
+                <div class="lista-pasos">
 
-                    <li>
-                        <span>01</span>
-                        <div>
-                            <strong>Selecciona una especialidad</strong>
-                            <p>
-                                Revisa las áreas médicas presentadas en la
-                                página principal.
-                            </p>
-                        </div>
-                    </li>
+                    <article class="paso">
+                        <span class="numero-paso">01</span>
+                        <h3>Selecciona</h3>
+                        <p>Conoce las especialidades médicas disponibles.</p>
+                    </article>
 
-                    <li>
-                        <span>02</span>
-                        <div>
-                            <strong>Completa tus datos</strong>
-                            <p>
-                                Accede al formulario y llena la información
-                                solicitada.
-                            </p>
-                        </div>
-                    </li>
+                    <article class="paso">
+                        <span class="numero-paso">02</span>
+                        <h3>Completa tus datos</h3>
+                        <p>Introduce tu información en el formulario.</p>
+                    </article>
 
-                    <li>
-                        <span>03</span>
-                        <div>
-                            <strong>Indica tu preferencia</strong>
-                            <p>
-                                Elige la fecha y el horario que prefieras
-                                para la cita.
-                            </p>
-                        </div>
-                    </li>
+                    <article class="paso">
+                        <span class="numero-paso">03</span>
+                        <h3>Envía tu solicitud</h3>
+                        <p>Indica la fecha y hora que prefieres.</p>
+                    </article>
 
-                </ol>
+                </div>
+
+                <div class="centrar-boton">
+                    <a href="2%20solicitar-cita.html" class="boton boton-principal">
+                        Comenzar solicitud
+                    </a>
+                </div>
+
             </div>
         </section>
 
     </main>
 
     <footer class="pie-pagina">
-        <div class="contenedor contenido-pie">
-
-            <a class="marca marca-pie" href="index.html">
-                <span class="marca-icono">+</span>
-                <span>Medi<span class="marca-acento">Citas</span></span>
-            </a>
-
-            <p>Proyecto académico de maquetación web.</p>
-
-            <small>
-                &copy; 2026 MediCitas. Todos los derechos reservados.
-            </small>
-
+        <div class="contenedor">
+            <p>© 2026 MediCitas. Todos los derechos reservados.</p>
         </div>
     </footer>
 
