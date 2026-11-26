@@ -12,6 +12,14 @@ Por ahora el sitio cuenta con una página de inicio (`index.html`), donde el pac
 
 **Tecnologías:** HTML5 y CSS3.
 
+## Fase 2: Interactividad con JavaScript
+
+En esta segunda etapa el sitio cobra vida. Sobre la maquetación que construimos en la fase anterior, incorporamos JavaScript para que MediCitas responda a las acciones del usuario, y todo se ejecuta directamente en el navegador, sin servidor ni base de datos.
+
+El código se organiza en un archivo JavaScript externo, enlazado a nuestras páginas, que reúne funciones propias encargadas de las distintas tareas. Con él, el formulario de `solicitar-cita.html` revisa que los campos obligatorios estén completos y que el correo tenga un formato válido, y muestra los mensajes de error en la misma página para que el paciente sepa qué corregir. Además, añadimos un componente dinámico que hace la navegación más útil e interactiva.
+
+**Tecnologías:** HTML5, CSS3 y JavaScript.
+
 ## Integrantes
 
 | # | Integrante | Rol |
@@ -27,7 +35,7 @@ Por ahora el sitio cuenta con una página de inicio (`index.html`), donde el pac
 
 ## Organización del repositorio
 
-El trabajo de esta etapa se encuentra en la rama `fase-1-maquetacion`. Cada integrante sube sus cambios desde su propia cuenta, de modo que el historial de commits refleja lo que aportó cada uno.
+El trabajo de la primera etapa se encuentra en la rama `fase-1-maquetacion` y el de la segunda en `fase-2-javascript`. Al terminar cada fase, su rama se une a `main`. Cada integrante sube sus cambios desde su propia cuenta, de modo que el historial de commits refleja lo que aportó cada uno.
 
 ## Cómo ver el proyecto
 
